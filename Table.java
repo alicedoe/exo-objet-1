@@ -20,24 +20,19 @@ public class Table extends Meuble {
     public Table() {
         Plateau plateau = new Plateau();
         plateau.couleur = "rouge";
-        plateau.hauteur = 10;
-        for(int i = 0; i < 4; i++){
-  Pied pied = new Pied();
-  pied.couleur = "rouge";
-  pied.hauteur = 110;
-  pieds.add(pied);
-  
-  
-}
-            this.hauteur = plateau.hauteur + pieds.get(0).hauteur;
+        for (int i = 0; i < 4; i++) {
+            Pied pied = new Pied();
+            pied.couleur = "rouge";
+            pieds.add(pied);
+
+        }
+        this.hauteur = plateau.hauteur + pieds.get(0).hauteur;
     }
 
-
-    
     @Override
     public int getHauteur() {
 //        return this.hauteur;
 
-return this.hauteur;
+        return this.hauteur;
     }
 }

@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package exo.objet.pkg1;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,8 +17,16 @@ public class ExoObjet1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        List<Meuble> meubles = new ArrayList() ;
         Meuble table = new Table() ;
-        System.out.println("hauteur : " + table.getHauteur() + " cm") ;
+        Meuble armoire = new Armoire() ;
+        meubles.add(table);
+        meubles.add(armoire);
+        
+        for (int i = 0; i < 2; i++) {
+            System.out.println("hauteur : " + meubles.get(i).getHauteur() + " cm") ;
+
+        }
         
     }
     

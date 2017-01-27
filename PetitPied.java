@@ -9,10 +9,11 @@ package exo.objet.pkg1;
  *
  * @author Ali
  */
-public class Plateau {
+public class PetitPied {
         int hauteur;
     String couleur;
-    public Plateau() {
+    
+    public PetitPied() {
         this.hauteur = 10;
     }
 }

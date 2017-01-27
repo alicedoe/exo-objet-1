@@ -12,4 +12,8 @@ package exo.objet.pkg1;
 public class Pied {
     int hauteur;
     String couleur;
+    
+    public Pied() {
+        this.hauteur = 110;
+    }
 }
